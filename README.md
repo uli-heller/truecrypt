@@ -151,12 +151,10 @@ Mir ist einmal ein exFAT-Volume "kaputt" gegangen und ich konnte es nicht
 mehr reparieren. `exfatfsck` Version 1.1.1 kann nicht reparieren!
 
 1. Volume wie üblich anlegen und einbinden
-2. Ermitteln: Wie heißt das zugehörige Gerät?
-
-    $ mount
-    ...
-    /dev/mapper/truecrypt1 on /media/truecrypt1 type vfat (rw,uid=1000,gid=1000,umask=077)
-
+2. Ermitteln: Wie heißt das zugehörige Gerät?<pre>
+$ mount
+...
+/dev/mapper/truecrypt1 on /media/truecrypt1 type vfat ...</pre>
 3. Aushängen (nicht über die TrueCrypt-Oberfläche durchführen!):
    `sudo umount /media/truecrypt1`
 4. ExFAT-Dateisystem anlegen:
@@ -167,12 +165,10 @@ mehr reparieren. `exfatfsck` Version 1.1.1 kann nicht reparieren!
 #### TrueCrypt-Volume mit NTFS
 
 1. Volume wie üblich anlegen und einbinden
-2. Ermitteln: Wie heißt das zugehörige Gerät?
-
+2. Ermitteln: Wie heißt das zugehörige Gerät?<pre>
     $ mount
     ...
-    /dev/mapper/truecrypt1 on /media/truecrypt1 type vfat (rw,uid=1000,gid=1000,umask=077)
-
+    /dev/mapper/truecrypt1 on /media/truecrypt1 type vfat ...</pre>
 3. Aushängen (nicht über die TrueCrypt-Oberfläche durchführen!):
    `sudo umount /media/truecrypt1`
 4. ExFAT-Dateisystem anlegen:
