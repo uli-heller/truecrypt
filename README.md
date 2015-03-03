@@ -201,13 +201,13 @@ Alle Tests mit diesen Randbedingungen durchführen:
 * Sechster Parameter-Satz
     * USB-Stick 2 Partitionen: sdb1 - FAT-Format, sdb2 - nicht formatiert
     * TrueCrypt-Volume auf sdb2: FAT-Format (... siehe Beschreibung)
-* Siebter Parameter-Satz
-    * USB-Stick: NTFS-Format
-    * TrueCrypt-Volume: FAT-Format<br>
+* Siebter Parameter-Satz:
   Diese Kombination habe ich im Einsatz, sie wird bei der täglichen Arbeit
   gelegentlich "schnarchlahm". Die Zugriffsgeschwindigkeit auf die
   TrueCrypt-Daten sind auf unter 3MB pro Sekunde, auch bei schnellen
   USB-3-Sticks
+    * USB-Stick: NTFS-Format
+    * TrueCrypt-Volume: FAT-Format
 
 Der betreffende USB-Stick muß für jeden Test-Zyklus neu formatiert werden!
 
@@ -216,7 +216,8 @@ Hier die Tests im einzelnen:
 1. Funktioniert die Anleitung grundsätzlich?
 2. Klappt der Start von Firefox?
 3. Klappt der Start von Thunderbird?
-4. Klappt dieser Zyklus: (nur testen, wenn vorige Tests OK sind)
+4. Klappt dieser Zyklus: (nur testen, wenn vorige Tests OK sind;
+   Zyklus 10-mal durchführen, dabei immer sichten, ob die geschriebenen Daten beim nächsten Zyklus sichtbar sind!)
     * USB-Stick einstecken
     * TrueCrypt-Volume einbinden
     * Daten auf das TrueCrypt-Volume schreiben
@@ -224,8 +225,8 @@ Hier die Tests im einzelnen:
     * TrueCrypt-Volume aushängen
     * USB-Stick aushängen
     * USB-Stick abziehen
-   Zyklus 10-mal durchführen, dabei immer sichten, ob die geschriebenen Daten beim nächsten Zyklus sichtbar sind!
-5. Klappt dieser Zyklus: (nur testen, wenn vorige Tests inkl. voriger Zyklus OK sind)
+5. Klappt dieser Zyklus: (nur testen, wenn vorige Tests inkl. voriger Zyklus OK sind;
+   Zyklus 5-mal durchführen, dabei immer sichten, ob die geschriebenen Daten beim nächsten Zyklus sichtbar sind!)
     * USB-Stick einstecken
     * TrueCrypt-Volume einbinden
     * Daten auf das TrueCrypt-Volume schreiben
@@ -233,8 +234,8 @@ Hier die Tests im einzelnen:
     * TrueCrypt-Volume aushängen
     * USB-Stick nicht aushängen, nur `sync` ausführen (dauert evtl. ein wenig, also Wartezeit)
     * USB-Stick abziehen
-   Zyklus 5-mal durchführen, dabei immer sichten, ob die geschriebenen Daten beim nächsten Zyklus sichtbar sind!
-6. Klappt dieser Zyklus: (nur testen, wenn vorige Tests inkl. voriger Zyklus OK sind)
+6. Klappt dieser Zyklus: (nur testen, wenn vorige Tests inkl. voriger Zyklus OK sind;
+   Zyklus 10-mal durchführen, dabei immer sichten, ob die geschriebenen Daten beim nächsten Zyklus sichtbar sind!)
     * USB-Stick einstecken
     * TrueCrypt-Volume einbinden
     * Daten auf das TrueCrypt-Volume schreiben
@@ -242,8 +243,8 @@ Hier die Tests im einzelnen:
     * TrueCrypt-Volume aushängen
     * USB-Stick nicht aushängen, nicht warten, kein `sync`
     * USB-Stick abziehen
-   Zyklus 10-mal durchführen, dabei immer sichten, ob die geschriebenen Daten beim nächsten Zyklus sichtbar sind!
-7. Klappt dieser Zyklus: (nur testen, wenn vorige Tests inkl. voriger Zyklus OK sind)
+7. Klappt dieser Zyklus: (nur testen, wenn vorige Tests inkl. voriger Zyklus OK sind;
+   Zyklus 10-mal durchführen, dabei immer sichten, ob die geschriebenen Daten beim nächsten Zyklus sichtbar sind!)
     * USB-Stick einstecken
     * TrueCrypt-Volume einbinden
     * Daten auf das TrueCrypt-Volume schreiben
@@ -251,8 +252,8 @@ Hier die Tests im einzelnen:
     * TrueCrypt-Volume nicht aushängen, nur `sync` ausführen (dauert evtl. ein wenig, also Wartezeit)
     * USB-Stick nicht aushängen, nicht warten, kein `sync`
     * USB-Stick abziehen
-   Zyklus 10-mal durchführen, dabei immer sichten, ob die geschriebenen Daten beim nächsten Zyklus sichtbar sind!
-8. Klappt dieser Zyklus: (nur testen, wenn vorige Tests inkl. voriger Zyklus OK sind)
+8. Klappt dieser Zyklus: (nur testen, wenn vorige Tests inkl. voriger Zyklus OK sind;
+   Zyklus 10-mal durchführen, dabei immer sichten, ob die geschriebenen Daten beim nächsten Zyklus sichtbar sind!)
     * USB-Stick einstecken
     * TrueCrypt-Volume einbinden
     * Daten auf das TrueCrypt-Volume schreiben
@@ -260,4 +261,3 @@ Hier die Tests im einzelnen:
     * TrueCrypt-Volume nicht aushängen, nicht warten, kein `sync`
     * USB-Stick nicht aushängen, nicht warten, kein `sync`
     * USB-Stick abziehen
-   Zyklus 10-mal durchführen, dabei immer sichten, ob die geschriebenen Daten beim nächsten Zyklus sichtbar sind!
