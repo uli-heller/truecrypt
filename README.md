@@ -201,6 +201,13 @@ Alle Tests mit diesen Randbedingungen durchführen:
 * Sechster Parameter-Satz
     * USB-Stick 2 Partitionen: sdb1 - FAT-Format, sdb2 - nicht formatiert
     * TrueCrypt-Volume auf sdb2: FAT-Format (... siehe Beschreibung)
+* Siebter Parameter-Satz
+    * USB-Stick: NTFS-Format
+    * TrueCrypt-Volume: FAT-Format<br>
+  Diese Kombination habe ich im Einsatz, sie wird bei der täglichen Arbeit
+  gelegentlich "schnarchlahm". Die Zugriffsgeschwindigkeit auf die
+  TrueCrypt-Daten sind auf unter 3MB pro Sekunde, auch bei schnellen
+  USB-3-Sticks
 
 Der betreffende USB-Stick muß für jeden Test-Zyklus neu formatiert werden!
 
